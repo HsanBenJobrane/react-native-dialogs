@@ -44,6 +44,8 @@ public class DialogAndroid extends ReactContextBaseJavaModule {
         while(iterator.hasNextKey()) {
             String key = iterator.nextKey();
 
+            builder.backgroundColor(Color.parseColor("#252525"));
+
             switch (key) {
                 case "title":
                     builder.title(options.getString("title"));
